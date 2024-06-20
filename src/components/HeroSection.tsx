@@ -29,7 +29,7 @@ export default function HeroSection() {
           <p className="-mt-5 text-[#ADB7BE] sm:text-lg lg:-mt-4 lg:px-60 lg:text-2xl">
             {`I love learning and exploring new technologies.`}
           </p>
-          <div className="mt-8 lg:space-x-7">
+          <div className="mt-8 px-12 lg:space-x-7">
             <Link
               href="/#contact"
               className="mt-3 inline-block w-full rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 px-1 py-1 text-white hover:bg-slate-200 sm:w-fit"

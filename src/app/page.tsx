@@ -1,6 +1,7 @@
 import About from '@/components/About';
 import Animate from '@/components/Animate';
 import Contacts from '@/components/Contacts';
+import Experience from '@/components/Experience';
 import Header from '@/components/Header';
 import HerpSection from '@/components/HeroSection';
 import Projects from '@/components/Projects';
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
       <About />
       <Projects />
+      <Experience />
       <Contacts />
     </main>
   );
