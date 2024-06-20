@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
@@ -32,12 +33,13 @@ export default function Projects() {
   };
 
   const projectImages = [
-    '/path/to/image1.jpg',
-    '/path/to/image2.jpg',
-    '/path/to/image3.jpg',
-    '/path/to/image4.jpg',
-    '/path/to/image5.jpg',
-    '/path/to/image6.jpg',
+    '/images/alura+.png',
+    '/images/alura+.png',
+    '/images/alura+.png',
+    '/images/alura+.png',
+    '/images/alura+.png',
+    '/images/alura+.png',
+    '/images/alura+.png',
   ];
 
   return (
@@ -59,31 +61,37 @@ export default function Projects() {
           </p>
         </motion.div>
       </section>
-      <section className="relative -mt-16 md:-mt-32 lg:-translate-y-56">
-        <Slider {...settings} className="px-4 md:px-10">
-          {projectImages.map((image, index) => (
-            <div key={index} className="px-2">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="rounded-lg bg-white p-10 shadow-lg sm:p-20 md:p-32"
+      <section className="md:-mt-32 lg:-translate-y-56">
+        <Link rel="stylesheet" href="/">
+          {' '}
+          <Slider {...settings} className="px-4 md:px-10">
+            {projectImages.map((image, index) => (
+              <div
+                key={index}
+                className="delay-150hover:-translate-y-1 relative px-6 transition duration-300 ease-in-out hover:scale-110"
               >
-                <img
-                  src={image}
-                  alt={`Project ${index + 1}`}
-                  className="mb-4 h-48 w-full rounded-md object-cover"
-                />
-                <h2 className="text-start text-xl font-bold">
-                  Project {index + 1}
-                </h2>
-                <p className="bg-gradient-to-r from-primary-400 to-secondary-600 bg-clip-text text-transparent">
-                  This is a brief description of project {index + 1}.
-                </p>
-              </motion.div>
-            </div>
-          ))}
-        </Slider>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="rounded-lg bg-[#121212] p-10 shadow-lg hover:bg-opacity-80 sm:p-20 md:p-32"
+                >
+                  <img
+                    src={image}
+                    alt={`Project ${index + 1}`}
+                    className="mb-4 h-48 w-full rounded-md object-cover"
+                  />
+                  <h2 className="text-start text-xl font-bold">
+                    Project {index + 1}
+                  </h2>
+                  <p className="bg-gradient-to-r from-primary-400 to-secondary-600 bg-clip-text text-transparent">
+                    This is a brief description of project {index + 1}.
+                  </p>
+                </motion.div>
+              </div>
+            ))}
+          </Slider>
+        </Link>
       </section>
     </div>
   );
