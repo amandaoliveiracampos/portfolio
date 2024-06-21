@@ -15,11 +15,6 @@ export default function Contacts() {
         transition={{ duration: 0.5 }}
         className="relative z-10 text-center"
       >
-        <h1 className="text-4xl font-extrabold text-white sm:text-5xl lg:mb-28 lg:text-5xl lg:leading-normal">
-          <span className="bg-gradient-to-r from-primary-400 to-secondary-600 bg-clip-text text-transparent">
-            {`CONTACTS`}
-          </span>
-        </h1>
         <div className="h-[250px] bg-zinc-900 opacity-50">
           <div className="text-[#ADB7BE] sm:text-lg lg:text-2xl">
             <div className="flex justify-center gap-72">
