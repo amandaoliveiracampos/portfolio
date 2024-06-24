@@ -80,9 +80,6 @@ export default function Projects() {
               {`PROJECTS`}
             </span>
           </h1>
-          <p className="mt-12 text-[#ADB7BE] sm:text-lg lg:text-2xl">
-            {`Here you will find some of the personal projects that I created.`}
-          </p>
         </motion.div>
       </section>
       <section className="px-36">

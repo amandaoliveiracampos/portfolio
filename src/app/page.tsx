@@ -1,3 +1,4 @@
+'use client';
 import About from '@/components/About';
 import Animate from '@/components/Animate';
 import Contacts from '@/components/Contacts';
