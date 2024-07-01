@@ -5,22 +5,31 @@ import Contacts from '@/components/Contacts';
 import Experience from '@/components/Experience';
 import Feedback from '@/components/Feedback';
 import Header from '@/components/Header';
-import HerpSection from '@/components/HeroSection';
+import HeroSection from '@/components/HeroSection';
+import MobileMenu from '@/components/MobileMenu';
+import MobileProjects from '@/components/MobileProjects';
 import Projects from '@/components/Projects';
+import useWindowSize from '@/hooks/useWindowSize';
+import React from 'react';
 
-export default function Home() {
+const page: React.FC = () => {
+  const size = useWindowSize();
+  const isMobile = size.width !== undefined && size.width <= 768;
+
   return (
     <main>
-      <Header />
-      <HerpSection />
+      {isMobile ? <MobileMenu /> : <Header />}
+      <HeroSection />
       <div className="flex w-full items-center justify-center">
         <Animate />
       </div>
       <About />
-      <Projects />
+      {isMobile ? <MobileProjects /> : <Projects />}
       <Experience />
       <Feedback />
       <Contacts />
     </main>
   );
-}
+};
+
+export default page;

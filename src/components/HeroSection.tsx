@@ -4,7 +4,10 @@ import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <div className="relative flex h-[600px] flex-col bg-black">
+    <div
+      id="hero-section"
+      className="relative flex h-[500px] flex-col bg-black lg:h-[600px]"
+    >
       <section className="relative flex w-full flex-1 items-center justify-center">
         <img
           src="/images/ca.jpeg"
@@ -28,10 +31,10 @@ export default function HeroSection() {
           <p className="-mt-5 text-[#ADB7BE] sm:text-lg lg:-mt-4 lg:px-60 lg:text-2xl">
             {`I love learning and exploring new technologies.`}
           </p>
-          <section className="mt-8 flex flex-col items-center justify-center space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0 lg:space-x-7">
+          <section className="mt-14 flex w-full flex-col items-center justify-center space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0 lg:space-x-7">
             <Link
               href="/"
-              className="inline-block rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 px-1 py-1 text-white hover:bg-slate-200 sm:w-fit"
+              className="inline-block w-60 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 px-1 py-1 text-white hover:bg-slate-200"
             >
               <span className="block rounded-full bg-[#121212] px-5 py-2 hover:bg-slate-800">
                 Hire Me
@@ -39,7 +42,7 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/"
-              className="inline-block rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 px-1 py-1 text-white hover:bg-slate-200 sm:w-fit lg:mb-20"
+              className="inline-block w-60 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 px-1 py-1 text-white hover:bg-slate-200 lg:mb-20"
             >
               <span className="block rounded-full bg-[#121212] px-5 py-2 hover:bg-slate-800">
                 Download CV

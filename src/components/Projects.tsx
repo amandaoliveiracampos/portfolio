@@ -67,7 +67,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="relative flex flex-col bg-black">
+    <div id="projects" className="relative flex flex-col bg-black">
       <section className="relative mb-36 mt-48 flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}

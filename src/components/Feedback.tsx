@@ -5,7 +5,7 @@ import { BiSolidQuoteAltRight } from 'react-icons/bi';
 
 export default function Feedback() {
   return (
-    <div className="lg:mb-28 lg:flex lg:gap-7 lg:px-10">
+    <div id="feedback" className="lg:mb-28 lg:flex lg:gap-7 lg:px-10">
       <div className="bg-fuchsia-400 text-base text-white">
         <div className="flex justify-between px-4 py-6">
           <BiSolidQuoteAltRight className="text-3xl" />

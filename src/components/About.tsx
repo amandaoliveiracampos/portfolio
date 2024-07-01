@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { DiResponsive } from 'react-icons/di';
-import { FaGitSquare, FaGithubSquare, FaReact } from 'react-icons/fa';
+import { FaFigma, FaGitSquare, FaGithubSquare, FaReact } from 'react-icons/fa';
 import { IoLogoCss3 } from 'react-icons/io5';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import {
@@ -15,7 +15,7 @@ import { TfiHtml5 } from 'react-icons/tfi';
 
 const About = () => {
   return (
-    <div className="bg-black lg:relative lg:px-12 lg:py-4">
+    <div id="about" className="bg-black lg:relative lg:px-12 lg:py-4">
       <section className="flex min-h-screen items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -40,24 +40,35 @@ const About = () => {
               <div className="lg:flex lg:items-center lg:justify-center lg:gap-9">
                 <Link
                   href="/"
-                  className="flex items-center justify-center gap-6 text-3xl lg:flex lg:items-center lg:justify-center lg:gap-9 lg:text-4xl"
+                  className="flex items-center justify-center gap-6 text-6xl lg:flex lg:items-center lg:justify-center lg:gap-9 lg:text-4xl"
                 >
                   <SiJavascript className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
                   <SiTypescript className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
                   <RiTailwindCssFill className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
-                  <TfiHtml5 className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
-                  <SiPostgresql className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
                 </Link>
                 <Link
                   href="/"
-                  className="mt-9 flex items-center justify-center gap-6 text-3xl lg:mt-0 lg:flex lg:items-center lg:justify-center lg:gap-9 lg:text-4xl"
+                  className="mt-20 flex items-center justify-center gap-6 text-6xl lg:mt-0 lg:flex lg:items-center lg:justify-center lg:gap-9 lg:text-4xl"
                 >
                   <IoLogoCss3 className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
                   <FaGitSquare className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
                   <FaGithubSquare className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
+                </Link>
+                <Link
+                  href="/"
+                  className="mt-20 flex items-center justify-center gap-6 text-5xl lg:mt-0 lg:flex lg:items-center lg:justify-center lg:gap-9 lg:text-4xl"
+                >
                   <FaReact className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
                   <DiResponsive className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
                   <SiMongodb className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
+                </Link>
+                <Link
+                  href=""
+                  className="mt-20 flex items-center justify-center gap-6 text-5xl lg:mt-0 lg:flex lg:items-center lg:justify-center lg:gap-9 lg:text-4xl"
+                >
+                  <SiPostgresql className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
+                  <TfiHtml5 className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
+                  <FaFigma className="delay-150hover:-translate-y-1 transition duration-300 ease-in-out hover:scale-150" />
                 </Link>
               </div>
             </div>

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Contacts() {
   return (
-    <div className="w-full bg-zinc-900 text-center text-[#ADB7BE]">
+    <div id="contact" className="w-full bg-zinc-900 text-center text-[#ADB7BE]">
       <div className="px-6 pt-10 text-2xl font-extrabold text-white">
         <h1>Send me an e-mail or an instant message!</h1>
         <div className="mt-4 flex h-44 flex-col gap-4 text-center text-base text-[#ADB7BE]">
